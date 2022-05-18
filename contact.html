@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Page</title>
+
+    <!-- font family -->
+    <!-- jost -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header fixed-top">
+      <div class="container">
+        <nav class="navigation">
+          <h1><a class="brand" href="index.html">Pooch Care</a></h1>
+          <div class="navBar">
+            <ul class="navBar-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li href="gallery.html"><a>Gallery</a></li>
+              <li>
+                <a href="blog.html"
+                  >Blog <span class="fa fa-angle-down"></span
+                ></a>
+              </li>
+              <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+          </div>
+          <div class="themeMode">
+            <a>
+              <i class="fa fa-moon"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <ul class="info">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="active">
+            <i class="fa-solid fa-arrow-right mx-2"></i>
+            Contact
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-contact">
+      <div class="container">
+        <div class="content-header">
+          <p>FIND US</p>
+          <h1>Get In Touch With Us</h1>
+        </div>
+        <div class="row">
+          <div class="item-left">
+            <form class="form-name-email">
+              <input id="name" type="text" placeholder="Name" required />
+              <input id="email" type="email" placeholder="Email" required />
+            </form>
+            <form class="form-subject">
+              <input id="subject" type="text" placeholder="Subject" required />
+            </form>
+            <form class="form-message">
+              <textarea
+                placeholder="Message"
+              ></textarea>
+            </form>
+            <button type="submit" class="button-submit">Send Message</button>
+          </div>
+
+          <div class="item-right">
+            <div class="info">
+              <div class="col">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>#135 block, Barnard St. Brooklyn, London 10036, UK</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="text">
+                  <h3>Telephone</h3>
+                  <p><a href="#">+(12)234-11-24</a></p>
+                  <p><a href="#">+(12)234-11-25</a></p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h3>Email Us</h3>
+                  <p><a href="#">example@mail.com</a></p>
+                  <p><a href="#">example@mail1.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.47340094994!2d-0.2416814286701171!3d51.52855824138451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1652818177623!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="contact">
+              <h3>Contact information</h3>
+              <ul>
+                <li>
+                  <p>
+                    <span>Address </span>:#135 block, Barnard St. Brooklyn,
+                    London 10036, UK
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Phone </span>:
+                    <a href="#" class="active">+(12)234-11-24</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Email </span>:
+                    <a href="#" class="active">example@mail.com</a>
+                  </p>
+                </li>
+                <li>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-dribbble"></i>
+                  <i class="fa-brands fa-google"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="company">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#" class="active">Blog Posts</a></li>
+                <li><a href="#" class="active">Services</a></li>
+                <li><a href="#" class="active">Pricing</a></li>
+              </ul>
+            </div>
+
+            <div class="links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#" class="active">Contact Us</a></li>
+                <li><a href="#" class="active">Create account</a></li>
+                <li><a href="#" class="active">Care Center</a></li>
+                <li><a href="#" class="active">Site Feedback</a></li>
+              </ul>
+            </div>
+
+            <div class="support">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#" class="active">All Dogs </a></li>
+                <li><a href="#" class="active">Care Advices</a></li>
+                <li><a href="#" class="active">Care Support</a></li>
+                <li><a href="#" class="active">Veterinary Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2020 Pooch Care. All Rights Reserved. Design by
+          <span><a href="#">W3Layouts</a></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
