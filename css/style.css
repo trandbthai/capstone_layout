@@ -158,6 +158,212 @@ ul {
   padding: 0 10px;
 }
 
+/* CONTENT - ABOUT */
+/* INTRODUCTION */
+.content-about .introduction .row {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.content-about h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: red;
+}
+
+.content-about h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.content-about .introduction .row .item-left h1 {
+  margin-top: 10px;
+}
+
+.content-about .introduction .row .item-left h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.content-about p {
+  color: gray;
+  font-size: 20px;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+.content-about .introduction .row .item-right .read {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #019401;
+}
+
+.content-about .introduction .row .item-right .read:hover {
+  color: #019401;
+  transition: all 0.5s;
+}
+
+/* HISTORY */
+.content-about .history {
+  position: relative;
+  background: url("/img/banner2.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.content-about .history::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.content-about .history .text {
+  padding: 80px 0;
+  width: 50%;
+  transform: translateX(-30px);
+  float: right;
+  color: white;
+}
+
+.content-about .history .text h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content-about .history .text p {
+  font-size: 20px;
+  color: #cfcccc;
+}
+
+.content-about .history .text .year-info {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* REASON */
+
+.content-about .reason .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 60px 0;
+  gap: 60px;
+}
+
+.content-about .reason .row .item-left {
+  text-align: right;
+}
+
+.content-about .reason .row .item-left img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content-about .reason .row .item-right .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-about .reason .row .item-right .list .col {
+  display: flex;
+}
+.content-about .reason .row .item-right .list .icon {
+  padding-right: 20px;
+}
+.content-about .reason .row .item-right .list .icon i {
+  font-size: 40px;
+  color: green;
+  position: relative;
+  top: 6px;
+}
+
+.content-about .reason .row .item-right .list .text h3 {
+  font-size: 24px;
+}
+
+.content-about .reason .row .item-right .list .text h3:hover {
+  color: green;
+}
+
+.content-about .reason .row .item-right .list .text p {
+  padding-bottom: 50px;
+}
+
+/* EXPERTS */
+.experts {
+  padding: 60px 0;
+  background-color: #f3f1f1;
+}
+.content-about .experts .title {
+  text-align: center;
+}
+
+.content-about .experts .list-expert {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.content-about .experts .list-expert .col {
+  text-align: center;
+}
+
+.content-about .experts .list-expert .col:hover img {
+  transform: scale(1.1GIT);
+  transform-origin: 50% 50%;
+}
+.content-about .experts .list-expert .col:hover h3 {
+  color: green;
+}
+
+.content-about .experts .list-expert .col .image-expert {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.content-about .experts .list-expert .col img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.content-about .experts .list-expert .col h3 {
+  font-size: 22px;
+}
+.content-about .experts .list-expert .col p {
+  font-size: 16px;
+}
+
+.content-about .experts .list-expert .col .icon a {
+  display: inline-block;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  background-color: gainsboro;
+  color: green;
+}
+
+.content-about .experts .list-expert .col .icon a i {
+  font-size: 12px;
+}
+
+.content-about .experts .list-expert .col .icon a:hover {
+  background-color: green;
+  color: white;
+}
+
 /* CONTENT - SERVICES*/
 .content-services .row {
   margin-top: 80px;
