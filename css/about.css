@@ -456,6 +456,13 @@ ul {
   .container {
     padding: 0 40px;
   }
+  /* HEADER */
+  .header .navigation .navBar {
+    display: none;
+  }
+  .header .navigation .themeMode .navbar-toggler {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -117,6 +117,60 @@ ul {
   display: none;
 }
 
+/* ABOUT */
+.about {
+  position: relative;
+  margin-top: 90px;
+  background: url("/img/banner4.jpeg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.about::before {
+  content: "";
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  display: block;
+  z-index: -1;
+}
+.about h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.about .info {
+  text-align: center;
+}
+
+.about .info li {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.about .info li a {
+  color: #019401;
+}
+
+.about .info .active {
+  color: #fff;
+}
+.about .info li i {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
 /* CONTENT -  CONTACT */
 
 .content-contact {
@@ -340,6 +394,13 @@ ul {
 @media screen and (max-width: 992px) {
   .container {
     padding: 0 40px;
+  }
+  /* HEADER */
+  .header .navigation .navBar {
+    display: none;
+  }
+  .header .navigation .themeMode .navbar-toggler {
+    display: inline-block;
   }
   /* CONTENT - CONTACT */
   .content-contact .row {
