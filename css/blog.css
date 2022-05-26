@@ -1,0 +1,352 @@
+* {
+  font-family: "Jost", "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+
+.header {
+  display: grid;
+  align-items: center;
+  height: 80px;
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+  background-color: #fff;
+}
+.header .navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.header .navigation .brand {
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 34px;
+  font-weight: 600;
+  color: #019401;
+}
+
+.header .navigation .navBar {
+  flex-basis: 100%;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.header .navigation .navBar .navBar-ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .navigation .navBar .navBar-ul li {
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.header .navigation .navBar .navBar-ul span {
+  font-size: 12px;
+}
+
+.header .navigation .navBar .navBar-ul .active {
+  color: #019401;
+}
+
+.header .navigation .navBar .navBar-ul a:hover {
+  color: #019401;
+  transition: all 0.5s;
+}
+
+.header .navigation .navBar .navBar-ul a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #019401;
+  transition: all 0.5s;
+}
+
+.header .navigation .navBar .navBar-ul a:hover::after {
+  width: 100%;
+}
+
+.header .navigation .themeMode {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header .navigation .themeMode .navbar-toggler {
+  margin-left: 10px;
+  background-color: #019401;
+  border: none;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+/* CONTENT - BLOG */
+
+.content-blog {
+  background-color: #faf6f6;
+}
+
+.content-blog .content-header {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.content-blog .content-header p {
+  font-size: 20px;
+  color: red;
+}
+
+.content-blog .content-header h1 {
+  font-size: 35px;
+}
+
+.content-blog .row {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 30px;
+  align-items: center;
+}
+.content-blog .row .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+  background-color: white;
+}
+
+.content-blog .row .card:hover {
+  transform: translateY(-20px);
+  transition: all 0.5s;
+}
+
+.content-blog .row .card .card-header img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.content-blog .row .card .card-body {
+  padding: 20px;
+}
+
+.content-blog .row .card .card-body h2 {
+  font-size: 30px;
+}
+
+.content-blog .row .card .card-body p {
+  font-size: 18px;
+  color: #5a5959;
+  padding-bottom: 10px;
+}
+
+.content-blog .row .card .card-body .author {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.content-blog .row .card .card-body .author a:hover {
+  color: red;
+}
+
+.content-blog .row .card .card-body .author span {
+  color: #8a8888;
+}
+
+.content-blog .row .card .card-body .meta-item {
+  display: inline-block;
+  color: #8a8888;
+}
+
+.content-blog .page {
+  padding-bottom: 50px;
+}
+
+.content-blog .page li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.content-blog .page .page-number {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content-blog .page .page-number:hover {
+  color: #019401;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: black;
+}
+
+.footer .footer-top {
+  border-bottom: 0.5px solid rgb(49, 48, 48);
+}
+.footer .footer-top .row {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.footer .footer-top .row h3 {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer .footer-top .row p,
+.footer .footer-top .row a {
+  color: gray;
+}
+
+.footer .footer-top .row li {
+  padding-bottom: 10px;
+}
+
+.footer .footer-top .row li i {
+  color: gray;
+  padding-right: 10px;
+}
+
+.footer .footer-top .row li i:hover {
+  color: #fff;
+}
+
+.footer .footer-top .row .active:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer .footer-top .row li p span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.footer .footer-top .row .footer-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .footer-bottom p {
+  color: gray;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.footer .footer-bottom span a {
+  color: red;
+}
+
+.footer .footer-bottom span a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  /* HEADER */
+  .header .navigation .navBar {
+    display: none;
+  }
+  .header .navigation .themeMode .navbar-toggler {
+    display: inline-block;
+  }
+
+  /* CONTENT-BLOG */
+  .content-blog .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* FOOTER */
+  .footer .footer-top .row {
+    display: block;
+  }
+  .footer .footer-top .row .footer-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+  /* HEADER */
+  .header .navigation .navBar {
+    display: none;
+  }
+  .header .navigation .themeMode .navbar-toggler {
+    display: inline-block;
+  }
+
+  /* CONTENT-BLOG */
+  .content-blog .row {
+    display: block;
+  }
+  .content-blog .row .col {
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+
+  /* FOOTER */
+  .footer .footer-top .row {
+    display: block;
+  }
+  .footer .footer-top .row .footer-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
