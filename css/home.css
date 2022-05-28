@@ -197,7 +197,7 @@ ul {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  -o-transition: all 0.3s; 
 }
 
 .carousel .item button:hover {
@@ -617,7 +617,7 @@ ul {
 }
 
 .nutrition .main {
-  background-image: url(../img/banner2.jpg);
+  background-image: url(../img/banner2.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

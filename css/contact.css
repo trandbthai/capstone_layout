@@ -317,7 +317,10 @@ ul {
 .content-contact .map iframe {
   width: 100%;
   border-radius: 10px;
+  display: block;
 }
+
+
 
 /* FOOTER */
 
