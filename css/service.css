@@ -72,7 +72,9 @@ ul {
   justify-content: flex-end;
   margin-bottom: 0;
 }
-
+.header .navigation .navBar .navBar-ul .active {
+  color: #019401;
+}
 .header .navigation .navBar .navBar-ul li {
   padding: 0 20px;
   font-size: 20px;

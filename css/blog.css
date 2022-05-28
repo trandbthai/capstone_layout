@@ -120,7 +120,7 @@ ul {
 .about {
   position: relative;
   margin-top: 90px;
-  background: url("/img/banner4.jpeg");
+  background: url("../img/banner4.jpeg");
   background-repeat: none;
   background-size: cover;
   background-position: center;
