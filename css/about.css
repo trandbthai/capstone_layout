@@ -121,7 +121,7 @@ ul {
 .about {
   position: relative;
   margin-top: 90px;
-  background: url("/img/banner4.jpeg");
+  background-image: url("../img/banner4.jpeg");
   background-repeat: none;
   background-size: cover;
   background-position: center;
@@ -225,7 +225,7 @@ ul {
 /* HISTORY */
 .content-about .history {
   position: relative;
-  background: url("/img/banner2.jpeg") no-repeat center;
+  background: url("../img/banner2.jpeg") no-repeat center;
   background-size: cover;
 }
 
@@ -420,6 +420,7 @@ ul {
 
 .footer .footer-top .row li i:hover {
   color: #fff;
+  transition: all 0.6s;
 }
 
 .footer .footer-top .row .active:hover {
@@ -455,13 +456,6 @@ ul {
 @media screen and (max-width: 992px) {
   .container {
     padding: 0 40px;
-  }
-  /* HEADER */
-  .header .navigation .navBar {
-    display: none;
-  }
-  .header .navigation .themeMode .navbar-toggler {
-    display: inline-block;
   }
 }
 

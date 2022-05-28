@@ -306,6 +306,7 @@ ul {
 
 .footer .footer-top .row li i:hover {
   color: #fff;
+  transition: all 0.6s;
 }
 
 .footer .footer-top .row .active:hover {
